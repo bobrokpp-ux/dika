@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mie Ayam Es Teh - Kenikmatan Tradisional Modern</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "eth-purple": "#627EEA",
+            "eth-blue": "#8BA8FF",
+            "eth-light": "#A48FFF",
+          },
+          fontFamily: {
+            inter: ["Inter", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    /* Ethereum-inspired gradient background */
+    .hero-bg {
+      background: linear-gradient(
+        135deg,
+        #627eea 0%,
+        #8ba8ff 50%,
+        #a48fff 100%
+      );
+    }
+
+    .floating-bg {
+      animation: float 10s infinite linear;
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-100px);
+      }
+    }
+
+    .btn-hover {
+      transition: all 0.3s ease;
+    }
+    .btn-hover:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-hover {
+      transition: transform 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+    }
+
+    .img-scale {
+      transition: transform 0.3s ease;
+    }
+    .img-scale:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="font-inter text-gray-800 overflow-x-hidden">
+  <!-- Hero Section -->
+  <section
+    class="hero-bg h-screen flex items-center justify-center text-center text-white relative overflow-hidden"
+  >
+    <div
+      class="floating-bg absolute inset-0 opacity-10"
+      style="
+        background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%222%22 fill=%22white%22/></svg>');
+        background-repeat: repeat;
+      "
+    ></div>
+    <div class="z-10 max-w-4xl px-4" data-aos="fade-up" data-aos-duration="1000">
+      <h1
+        class="text-5xl md:text-7xl font-bold mb-4 drop-shadow-lg"
+      >
+        Mie Ayam Es Teh: Kenikmatan Tradisional Modern
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 font-light">
+        Nikmati mie ayam gurih dengan topping ayam empuk dan es teh segar yang
+        menyegarkan. Cocok untuk Gen Z yang mencari cita rasa autentik dengan
+        sentuhan modern!
+      </p>
+      <!-- Gambar Mie Ayam -->
+      <img
+        src="cara-membuat-mie-ayam-4-780x470-removebg-preview.png"
+        alt="Mie Ayam"
+        class="w-72 h-auto mx-auto mb-8 rounded-2xl shadow-2xl img-scale"
+      />
+      
+      <div class="space-x-4">
+        <a
+          href="#contact"
+          class="inline-block px-8 py-4 bg-gradient-to-r from-eth-blue to-eth-light text-white font-semibold rounded-full btn-hover"
+          >Pesan Sekarang</a
+        >
+        <a
+          href="#about"
+          class="inline-block px-8 py-4 bg-white bg-opacity-20 text-white border-2 border-white rounded-full btn-hover hover:bg-white hover:text-eth-purple"
+          >Pelajari Lebih Lanjut</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Highlights -->
+  <section
+    class="py-20 px-4 max-w-6xl mx-auto"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+  >
+    <h2 class="text-4xl font-bold text-center mb-12 text-eth-purple">
+      Mengapa Pilih Mie Ayam Es Teh Kami?
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div
+        class="bg-white rounded-2xl p-8 text-center shadow-lg card-hover"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+      >
+        <i class="fas fa-utensils text-5xl text-eth-purple mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Rasa Lezat</h3>
+        <p>
+          Mie ayam dengan kuah kaldu ayam asli dan topping ayam yang juicy,
+          cocok untuk lidah Gen Z.
+        </p>
+      </div>
+      <div
+        class="bg-white rounded-2xl p-8 text-center shadow-lg card-hover"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
+        <i class="fas fa-leaf text-5xl text-eth-purple mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Bahan Segar</h3>
+        <p>Bahan-bahan segar dari petani lokal, dipilih harian untuk kualitas terbaik.</p>
+      </div>
+      <div
+        class="bg-white rounded-2xl p-8 text-center shadow-lg card-hover"
+        data-aos="zoom-in"
+        data-aos-delay="300"
+      >
+        <i class="fas fa-shield-alt text-5xl text-eth-purple mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Kebersihan Utama</h3>
+        <p>Dimasak di dapur bersih dengan standar higiene tinggi, aman dan sehat.</p>
+      </div>
+      <div
+        class="bg-white rounded-2xl p-8 text-center shadow-lg card-hover"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      >
+        <i class="fas fa-box text-5xl text-eth-purple mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Kemasan Ramah Lingkungan</h3>
+        <p>
+          Kemasan biodegradable yang mudah dibawa, cocok untuk gaya hidup modern.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Showcase -->
+  <section
+    class="py-20 px-4 max-w-6xl mx-auto"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+  >
+    <h2 class="text-4xl font-bold text-center mb-12 text-eth-purple">Galeri Produk</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <img
+        src="cara-membuat-mie-ayam-4-780x470-removebg-preview.png"
+        alt="Mie Ayam"
+        class="w-full rounded-3xl shadow-lg img-scale"
+        data-aos="flip-left"
+        data-aos-delay="100"
+      />
+      <img
+        src="cara-membuat-mie-ayam-4-780x470-removebg-preview.png"
+        alt="Es Teh"
+        class="w-full rounded-3xl shadow-lg img-scale"
+        data-aos="flip-left"
+        data-aos-delay="200"
+      />
+      <img
+        src="cara-membuat-mie-ayam-4-780x470-removebg-preview.png"
+        alt="Combo Mie Ayam Es Teh"
+        class="w-full rounded-3xl shadow-lg img-scale"
+        data-aos="flip-left"
+        data-aos-delay="300"
+      />
+      <img
+        src="cara-membuat-mie-ayam-4-780x470-removebg-preview.png"
+        alt="Es Teh Segar"
+        class="w-full rounded-3xl shadow-lg img-scale"
+        data-aos="flip-left"
+        data-aos-delay="400"
+      />
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section
+    class="py-20 px-4 max-w-6xl mx-auto text-center"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+  >
+    <h2 class="text-4xl font-bold mb-12 text-eth-purple">Pilih Paket Anda</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div
+        class="bg-white rounded-2xl p-8 shadow-lg relative"
+        data-aos="slide-up"
+        data-aos-delay="100"
+      >
+        <h3 class="text-2xl font-semibold mb-4">Paket Mie Ayam</h3>
+        <p class="text-3xl font-bold text-eth-purple mb-2">Rp 15.000</p>
+        <p class="mb-6">1 Porsi Mie Ayam</p>
+        <a
+          href="#contact"
+          class="inline-block px-6 py-3 bg-gradient-to-r from-eth-blue to-eth-light text-white font-semibold rounded-full btn-hover"
+          >Pesan Sekarang</a
+        >
+      </div>
+      <div
+        class="bg-white rounded-2xl p-8 shadow-lg relative border-4 border-eth-purple"
+        data-aos="slide-up"
+        data-aos-delay="200"
+      >
+        <span
+          class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-eth-purple text-white px-4 py-1 rounded-full text-sm"
+          >Terlaris</span
+        >
+        <h3 class="text-2xl font-semibold mb-4">Combo Mie Ayam + Es Teh</h3>
+        <p class="text-3xl font-bold text-eth-purple mb-2">Rp 20.000</p>
+        <p class="mb-6">1 Mie Ayam + 1 Es Teh</p>
+        <a
+          href="#contact"
+          class="inline-block px-6 py-3 bg-gradient-to-r from-eth-blue to-eth-light text-white font-semibold rounded-full btn-hover"
+          >Pesan Sekarang</a
+        >
+      </div>
+      <div
+        class="bg-white rounded-2xl p-8 shadow-lg relative"
+        data-aos="slide-up"
+        data-aos-delay="300"
+      >
+        <h3 class="text-2xl font-semibold mb-4">Paket Keluarga</h3>
+        <p class="text-3xl font-bold text-eth-purple mb-2">Rp 50.000</p>
+        <p class="mb-6">3 Mie Ayam + 3 Es Teh</p>
+        <a
+          href="#contact"
+          class="inline-block px-6 py-3 bg-gradient-to-r from-eth-blue to-eth-light text-white font-semibold rounded-full btn-hover"
+          >Pesan Sekarang</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section
+    class="py-20 px-4 max-w-6xl mx-auto"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+  >
+    <h2 class="text-4xl font-bold text-center mb-12 text-eth-purple">
+      Apa Kata Pelanggan Kami?
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div
+        class="bg-white rounded-2xl p-8 text-center shadow-lg"
+        data-aos="fade-right"
+        data-aos-delay="100"
+      >
+        <img
+          src="https://via.placeholder.com/80x80/627EEA/FFFFFF?text=A"
+          alt="Pelanggan A"
+          class="w-20 h-20 rounded-full mx-auto mb-4"
+        />
+        <p class="mb-4">
+          "Mie ayamnya enak banget, ayamnya empuk dan kuahnya gurih. Cocok
+          buat nongkrong bareng temen!"
+        </p>
+        <cite class="text-sm text-gray-600">- Rina, 22</cite>
+      </div>
+      <div
+        class="bg-white rounded-2xl p-8 text-center shadow-lg"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <img
+          src="https://via.placeholder.com/80x80/8BA8FF/FFFFFF?text=B"
+          alt="Pelanggan B"
+          class="w-20 h-20 rounded-full mx-auto mb-4"
+        />
+        <p class="mb-4">
+          "Es tehnya segar dan manis pas. Suka banget sama kemasannya yang
+          ramah lingkungan."
+        </p>
+        <cite class="text-sm text-gray-600">- Budi, 25</cite>
+      </div>
+      <div
+        class="bg-white rounded-2xl p-8 text-center shadow-lg"
+        data-aos="fade-left"
+        data-aos-delay="300"
+      >
+        <img
+          src="https://via.placeholder.com/80x80/A48FFF/FFFFFF?text=C"
+          alt="Pelanggan C"
+          class="w-20 h-20 rounded-full mx-auto mb-4"
+        />
+        <p class="mb-4">
+          "Combo mie ayam es teh jadi favoritku. Murah, enak, dan cepat
+          datangnya!"
+        </p>
+        <cite class="text-sm text-gray-600">- Sari, 23</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- About the Brand -->
+  <section
+    id="about"
+    class="py-20 px-4 max-w-4xl mx-auto text-center bg-gradient-to-r from-gray-100 to-gray-200 rounded-2xl"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+  >
+    <h2 class="text-4xl font-bold mb-6 text-eth-purple">
+      Tentang Mie Ayam Es Teh
+    </h2>
+    <p class="text-lg leading-relaxed">
+      Mie Ayam Es Teh adalah brand makanan yang didorong oleh Gen Z,
+      menghadirkan cita rasa tradisional mie ayam dan es teh dengan sentuhan
+      modern. Didirikan oleh para pecinta kuliner dan ahli nutrisi, kami
+      mengutamakan kesegaran, inovasi, dan keberlanjutan. Produk kami diuji di
+      laboratorium untuk kualitas terbaik, memastikan Anda mendapatkan yang
+      terbaik setiap kali. Percayalah pada masa depan kuliner!
+    </p>
+  </section>
+
+  <!-- Contact / Order Form -->
+  <section
+    id="contact"
+    class="hero-bg py-20 px-4 text-center text-white"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+  >
+    <h2 class="text-4xl font-bold mb-12">Pesan Mie Ayam Es Teh Anda Hari Ini</h2>
+    <form class="max-w-md mx-auto space-y-4" id="orderForm">
+      <input
+        type="text"
+        name="name"
+        placeholder="Nama Anda"
+        class="w-full p-4 rounded-lg border-none"
+        required
+      />
+      <input
+        type="tel"
+        name="whatsapp"
+        placeholder="Nomor WhatsApp"
+        class="w-full p-4 rounded-lg border-none"
+        required
+      />
+      <input
+        type="text"
+        name="address"
+        placeholder="Alamat Pengiriman"
+        class="w-full p-4 rounded-lg border-none"
+        required
+      />
+      <select
+        name="product"
+        class="w-full p-4 rounded-lg border-none"
+        required
+      >
+        <option value="">Pilih Produk</option>
+        <option value="mie-ayam">Mie Ayam (Rp 15.000)</option>
+        <option value="es-teh">Es Teh (Rp 10.000)</option>
+        <option value="combo">Combo Mie Ayam + Es Teh (Rp 20.000)</option>
+        <option value="keluarga">Paket Keluarga (Rp 50.000)</option>
+      </select>
+      <textarea
+        name="message"
+        rows="4"
+        placeholder="Pesan khusus atau catatan?"
+        class="w-full p-4 rounded-lg border-none resize-none"
+      ></textarea>
+      <button
+        type="submit"
+        class="w-full py-4 bg-gradient-to-r from-eth-blue to-eth-light text-white font-semibold rounded-lg btn-hover"
+      >
+        Kirim Pesanan
+      </button>
+    </form>
+  </section>
+
+  <!-- JavaScript for Interactivity -->
+  <script>
+    AOS.init();
+
+    document.getElementById("orderForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Terima kasih atas pesanan Anda! Kami akan menghubungi Anda via WhatsApp segera.");
+      this.reset();
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    });
+  </script>
+</body>
+</html>

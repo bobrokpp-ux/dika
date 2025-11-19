@@ -1,0 +1,19 @@
+/* Ethereum-inspired gradient background */
+.hero-bg {
+  background: linear-gradient(
+    135deg,
+    #627eea 0%,
+    #8ba8ff 50%,
+    #a48fff 100%
+  );
+}
+
+.floating-bg {
+  animation: float 10s infinite linear;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
